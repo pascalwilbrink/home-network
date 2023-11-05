@@ -1,0 +1,101 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pascalwilbrink-nl
+  title: Pascalwilbrink.nl
+  tags:
+    - php
+    - laravel
+    - site
+  links:
+    - url: https://pascalwilbrink.nl
+      title: Website
+      icon: internet
+spec:
+  type: website
+  lifecycle: beta
+  owner: Developers
+  system: system:default/websites
+  dependsOn:
+    - resource:default/pascalwilbrink-nl-db
+---
+
+
+
+## D3p0t Core
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: d3p0t-core
+  title: D3p0t Core
+  description: Core library for D3p0t Framework
+  annotations:
+      github.com/project-slug: 'd3p0t/core'
+      backstage.io/techdocs-ref: dir:.
+      backstage.io/source-location: url:https://github.com/d3p0t/core/
+      sonarqube.org/project-key: d3p0t_core
+      docker.com/repository: grafana/grafana
+  tags:
+    - php
+    - d3p0t
+    - library
+    - laravel
+spec:
+  type: library
+  owner: Developers
+  lifecycle: Stable
+  system: system:default/D3p0t
+---
+
+
+## D3p0t Auth Module
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: d3p0t-auth
+  title: D3p0t Auth Module
+  description: Auth Module for D3p0t Framework
+  annotations:
+      backstage.io/source-location: url:https://github.com/d3p0t/auth-module/
+      github.com/project-slug: 'd3p0t/auth-module'
+      backstage.io/techdocs-ref: dir:.
+      sonarqube.org/project-key: d3p0t_auth-module
+  tags:
+    - php
+    - d3p0t
+    - library
+    - laravel
+spec:
+  type: module
+  owner: Developers
+  lifecycle: beta
+  system: system:default/D3p0t
+  dependsOn:
+    - component:d3p0t-core
+---
+
+
+## PascalWilbrink.nl Domain
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pascalwilbrink
+  title: PascalWilbrink.nl
+  description: Personal Website
+  annotations:
+      backstage.io/techdocs-ref: dir:.
+  tags:
+    - php
+    - d3p0t
+    - library
+    - laravel
+spec:
+  type: Domain
+  owner: Developers
+  lifecycle: beta
+---

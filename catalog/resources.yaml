@@ -1,0 +1,11 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-resource
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: pascalwilbrink-nl-db
+  description: Database for Pascalwilbrink.nl
+spec:
+  type: database
+  owner: developers
+  system: websites

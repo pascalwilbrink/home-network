@@ -1,0 +1,36 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: guest
+spec:
+  memberOf: [group:default/guests]
+---
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Pascal
+  description: User description
+  links:
+    - url: https://github.com/pascalwilbrink
+      title: Github
+      icon: github
+    - url: https://www.linkedin.com/in/pascal-wilbrink/
+      title: LinkedIn
+      icon: linkedin
+  annotations:
+    github.com/user-login: pascalwilbrink
+spec:
+  profile:
+    displayName: Pascal Wilbrink
+    email: pascal.wilbrink@gmail.com
+  memberOf: 
+    - group:default/developers
+    - group:default/guests
+    - group:default/users
+    - group:default/maintainers
+---

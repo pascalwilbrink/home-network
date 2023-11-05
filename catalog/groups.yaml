@@ -1,0 +1,46 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Users
+spec:
+  type: team
+  children:
+    - Developers
+    - Maintainers
+    - Guests
+---
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Developers
+spec:
+  type: team
+  children: []
+---
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Maintainers
+spec:
+  type: team
+  children: []
+---
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Guests
+spec:
+  type: team
+  children: []
+---

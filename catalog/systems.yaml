@@ -1,0 +1,57 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: D3p0t
+  title: D3p0t Framework
+  description: The D3p0t Framework is a collection of Laravel libraries and modules to rapid develop PHP Applications
+  tags:
+    - php
+    - laravel
+    - library
+  links:
+    - url: https://github.com/d3p0t
+      title: Github
+      icon: github
+spec:
+  owner: Developers
+---
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: volturi
+  title: Volturi Framework
+  description: The Volturi Framework is a set of web components that are fully customizable and themable.
+  tags:
+    - webcomponents
+    - lit
+    - javascript
+    - typescript
+    - library
+    - ui
+  links:
+    - url: https://github.com/volturi
+      title: Github
+      icon: github
+spec:
+  owner: Developers
+---
+
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: websites
+  title: Websites
+  description: Published websites
+  tags:
+    - site
+spec:
+  owner: Developers
+---
